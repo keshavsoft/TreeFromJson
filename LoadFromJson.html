@@ -31,6 +31,7 @@
             <div class="collapse navbar-collapse" id="MenuNavItems">
                 <ul class="navbar-nav me-auto" id="MenuNavContainerId">
                     
+                    
                     <li>
                         <a href="./SimpleObject.html" class="nav-link text-white TreeViewAClass">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -115,8 +116,22 @@
     </nav>
 
     <main>
-
+        
     <div class="container">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <input class="form-control" type="file" id="SelectFileId">
+
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <input class="btn btn-success" type="button" value="Show" id="UploadData">
+                </div>
+            </div>
+        </div>
         <ul class="list list-unstyled list-bg-white list-icon-red mb-0" style="width: 30rem;">
             <li class="list-item" id="KCont1">
                 <p class="list-title">KeshavSoft</p>
@@ -129,6 +144,10 @@
     <footer>
         <!-- place footer here -->
     </footer>
+    <script>
+        //HbsTemplateForScreensWithSubTableColumnsOnly
+        let jVarGlobalPresentViewData;
+    </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -140,7 +159,10 @@
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
 <script src="./Js/headerChange.js" type="module"></script>
-<script src="./Js/SimpleObject.js" type="module"></script>
+
+<script src="./Js/LoadFromJson/LoadFromJson.js" type="module"></script>
 
 </html>

@@ -1,7 +1,7 @@
 import { StartFunc as StartFuncForObject } from "./ForObject.js";
 import { StartFunc as StartFuncForCollapse } from "./ForCollapse.js";
 
-let StartFunc = () => {
+let StartFunc = ({ data }) => {
     let k1 = document.getElementById("KCont1");
     k1.innerHTML = "";
     let jVarLocalData = data;
@@ -13,7 +13,7 @@ let StartFunc = () => {
     StartFuncForCollapse();
 };
 
-let data = {
+let data2 = {
     key1: "value1",
     key2: {
         Name: "Keshav",
